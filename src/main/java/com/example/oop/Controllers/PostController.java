@@ -27,7 +27,7 @@ public class PostController {
     }
 
     @GetMapping
-    public ResponseEntity<Object> getPostDetails(@RequestParam Integer postID)
+    public ResponseEntity<Object> getPostDetails(@RequestParam("postID") Integer postID)
     {
         return postService.getPostDetails(postID);
     }
@@ -39,10 +39,10 @@ public class PostController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Object> deletePost(@RequestParam Integer deletePostRequest)
+    public ResponseEntity<Object> deletePost(@RequestParam("postID") Integer postID)
     {
-        DeletePostRequest deletePostRequest1= new DeletePostRequest(deletePostRequest);
-        return postService.deletePost(deletePostRequest1);
+        DeletePostRequest deletePostRequest= new DeletePostRequest(postID);
+        return postService.deletePost(deletePostRequest);
     }
 
 }

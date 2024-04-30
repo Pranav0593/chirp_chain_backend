@@ -26,7 +26,7 @@ public class CommentController {
     }
 
     @GetMapping
-    public ResponseEntity<Object> getCommentDetails(@RequestParam Integer commentID)
+    public ResponseEntity<Object> getCommentDetails(@RequestParam("commentID") Integer commentID)
     {
         return commentService.getCommentDetails(commentID);
     }
