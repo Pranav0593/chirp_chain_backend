@@ -3,6 +3,7 @@ package com.example.oop.Entities;
 import jakarta.persistence.*;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Date;
 
@@ -33,6 +34,7 @@ public class Post {
        Date createdAt = new Date();
        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
          this.date = dateFormat.format(createdAt);
+         comments=new ArrayList<>();
 
    }
 
@@ -40,6 +42,7 @@ public class Post {
         Date createdAt = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         this.date = dateFormat.format(createdAt);
+        comments=new ArrayList<>();
     }
 
 
