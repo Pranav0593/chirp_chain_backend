@@ -38,10 +38,10 @@ public class CommentController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Object> deleteComment(@RequestBody DeleteCommentRequest deleteCommentRequest)
+    public ResponseEntity<Object> deleteComment(@RequestParam("commentID") Integer commentID)
     {
+        DeleteCommentRequest deleteCommentRequest = new DeleteCommentRequest(commentID);
         return commentService.deleteComment(deleteCommentRequest);
     }
-
 
 }
