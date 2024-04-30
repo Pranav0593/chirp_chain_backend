@@ -35,6 +35,7 @@ public class AppUser {
     }
 
     public AppUser() {
+
         posts=new ArrayList<>();
     }
 

@@ -34,7 +34,7 @@ public class Post {
        Date createdAt = new Date();
        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
          this.date = dateFormat.format(createdAt);
-         comments=new ArrayList<>();
+        comments = new ArrayList<>();
 
    }
 
@@ -42,7 +42,8 @@ public class Post {
         Date createdAt = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         this.date = dateFormat.format(createdAt);
-        comments=new ArrayList<>();
+        comments = new ArrayList<>();
+
     }
 
 
