@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer commentId;
+    private Integer commentID;
 
     private String commentBody;
 
@@ -30,14 +30,14 @@ public class Comment {
 
     // Getters and setters
 
-    public Integer getCommentId() {
+    public Integer getCommentID() {
 
-        return commentId;
+        return commentID;
     }
 
-    public void setCommentId(Integer id) {
+    public void setCommentID(Integer id) {
 
-        this.commentId = id;
+        this.commentID = id;
     }
 
     public String getCommentBody()

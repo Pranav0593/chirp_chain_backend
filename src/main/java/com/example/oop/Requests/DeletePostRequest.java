@@ -6,6 +6,7 @@ public class DeletePostRequest
 
     public DeletePostRequest(Integer postID)
     {
+
         this.postID = postID;
     }
 

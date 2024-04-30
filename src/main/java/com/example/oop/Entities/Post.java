@@ -12,8 +12,9 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer postID;
-    private String date;
     private String postBody;
+    private String date;
+
 
 
 

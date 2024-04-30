@@ -39,9 +39,10 @@ public class PostController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Object> deletePost(@RequestBody DeletePostRequest deletePostRequest)
+    public ResponseEntity<Object> deletePost(@RequestParam Integer deletePostRequest)
     {
-        return postService.deletePost(deletePostRequest);
+        DeletePostRequest deletePostRequest1= new DeletePostRequest(deletePostRequest);
+        return postService.deletePost(deletePostRequest1);
     }
 
 }

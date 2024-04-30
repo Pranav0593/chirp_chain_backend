@@ -4,9 +4,6 @@ import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class CommentCreator {
-    //commentCreator<Object>
-    //        -userID<int>
-    //        -name<str>
 
     private int userID;
     private String name;
